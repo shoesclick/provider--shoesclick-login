@@ -1,7 +1,7 @@
 package com.shoesclick.provider.spi.admin;
 
-import com.shoesclick.provider.spi.adapter.UserAdapterModel;
-import com.shoesclick.provider.spi.model.User;
+import com.shoesclick.provider.adapter.UserAdapterModel;
+import com.shoesclick.provider.model.User;
 import org.keycloak.component.ComponentModel;
 import org.keycloak.credential.CredentialInput;
 import org.keycloak.credential.CredentialInputValidator;
@@ -32,6 +32,8 @@ public class AdminStorageProvider implements
         this.keycloakSession = session;
         this.componentModel = model;
     }
+
+
 
     @Override
     public void close() {

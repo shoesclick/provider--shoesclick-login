@@ -1,6 +1,6 @@
-package com.shoesclick.provider.spi.adapter;
+package com.shoesclick.provider.adapter;
 
-import com.shoesclick.provider.spi.model.User;
+import com.shoesclick.provider.model.User;
 import org.keycloak.component.ComponentModel;
 import org.keycloak.credential.UserCredentialManager;
 import org.keycloak.models.*;

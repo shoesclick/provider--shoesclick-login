@@ -1,6 +1,6 @@
 package com.shoesclick.provider.spi.admin;
 
-import com.shoesclick.provider.spi.model.User;
+import com.shoesclick.provider.model.User;
 
 import java.util.HashMap;
 

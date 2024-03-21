@@ -1,4 +1,4 @@
-package com.shoesclick.provider.spi.model;
+package com.shoesclick.provider.model;
 
 public class User {
     private String name;
