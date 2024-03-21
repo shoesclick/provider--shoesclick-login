@@ -1,0 +1,2 @@
+com.shoesclick.provider.spi.site.SiteStorageProviderFactory
+com.shoesclick.provider.spi.admin.AdminStorageProviderFactory
