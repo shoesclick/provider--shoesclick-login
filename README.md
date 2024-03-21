@@ -19,15 +19,6 @@ Eclipse ou Intellij
 
 Docker: Para Rodar o arquivo docker-compose (Contido no projeto principal) que contém a imagem do mysql para facilitar a integração
 
-Postman para Testes : (https://www.postman.com/downloads/)
-```
-
-## Swagger
-
-Para acessar a documentação do Swagger, utilize o link abaixo (Local):
-
-```
-http://localhost:8080/swagger-ui/index.html
 ```
 
 ## Rodando os Testes
