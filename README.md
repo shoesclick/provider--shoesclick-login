@@ -49,7 +49,7 @@ Apos a compilação rode o docker compose contido no projeto:
 Rode o keycloak com a seguinte url:
 
 ```
-http://localhost:7080/admin
+http://localhost:7080/auth/admin
 ```
 
 
