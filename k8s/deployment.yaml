@@ -15,12 +15,12 @@ spec:
     spec:
         containers:
           - name: provider--shoesclick-login-container
-            image: $awsaccountid.dkr.ecr.$awseksregion.amazonaws.com/$awsecrrepository:provider--shoesclick-login-$githash
+            image: $dck-accountid/$dck-repository:provider--shoesclick-login-$githash
             env:
               - name: SPRING_PROFILES_ACTIVE
                 value: "dev"
               - name: CONFIG_SERVER
-                value: "http://svc-swapiconfigserver.corporativo.svc.cluster.local/config/"
+                value: "http://svc-swapiconfigserver.shoes-eks.svc.cluster.local/config/"
             ports:
               - containerPort: 5000
               - containerPort: 9090
