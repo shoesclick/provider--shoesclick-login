@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: provider--shoesclick-login-deployment
-  namespace: shoes-eks
+  namespace: ns-login
 spec:
   selector:
     matchLabels:

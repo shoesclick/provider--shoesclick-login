@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: provider--shoesclick-login-configmap
-  namespace: shoes-eks
+  namespace: ns-login
 data:
   KC_HTTP_RELATIVE_PATH: "/auth"
   KC_HOSTNAME: "localhost"

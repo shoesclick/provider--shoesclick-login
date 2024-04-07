@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata: 
-  name: svc-provider--shoesclick-login
-  namespace: shoes-eks
+  name: shoesclick-login
+  namespace: ns-login
 spec:
   type: LoadBalancer
   selector:

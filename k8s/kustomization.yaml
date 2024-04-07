@@ -4,5 +4,4 @@ resources:
     - namespace.yaml
     - configMap.yaml
     - deployment.yaml
-    - hpa.yaml
     - service.yaml
