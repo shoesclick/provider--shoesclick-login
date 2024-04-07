@@ -25,7 +25,3 @@ spec:
                 containerPort: 7080
               - name: "https"
                 containerPort: 7443
-            readinessProbe:
-              httpGet:
-                path: /auth
-                port: 7080
