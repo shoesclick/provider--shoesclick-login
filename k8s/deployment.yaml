@@ -16,11 +16,16 @@ spec:
         containers:
           - name: provider--shoesclick-login-container
             image: $dck-accountid/$dck-repository:provider--shoesclick-login-$githash
+            args: ["start-dev"]
             envFrom:
               - configMapRef:
                   name: provider--shoesclick-login-configmap
             ports:
-              - containerPort: 7080
-              - containerPort: 9090
-              - containerPort: 7443
-            command: [ "start-dev", "--http-port 7080", "--https-port 7443", "--import-realm" ]
+              - name: "http"
+                containerPort: 7080
+              - name: "https"
+                containerPort: 7443
+            readinessProbe:
+              httpGet:
+                path: /realms/master
+                port: 7080
