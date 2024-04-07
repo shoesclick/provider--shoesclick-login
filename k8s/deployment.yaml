@@ -22,19 +22,3 @@ spec:
             ports:
               - containerPort: 7080
               - containerPort: 9090
-            livenessProbe:
-              httpGet:
-                path: /actuator/health
-                port: 9090
-              initialDelaySeconds: 120
-              periodSeconds: 60
-              timeoutSeconds: 10
-              successThreshold: 1
-              failureThreshold: 2
-            readinessProbe:
-              httpGet:
-                path: /actuator/health
-                port: 9090
-              initialDelaySeconds: 120
-              periodSeconds: 10
-              timeoutSeconds: 10
