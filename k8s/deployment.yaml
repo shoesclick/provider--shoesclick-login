@@ -21,7 +21,5 @@ spec:
               - configMapRef:
                   name: provider--shoesclick-login-configmap
             ports:
-              - name: "http"
-                containerPort: 7080
-              - name: "https"
-                containerPort: 7443
+              - containerPort: 7080
+              - containerPort: 7443
