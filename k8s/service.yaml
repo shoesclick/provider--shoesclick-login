@@ -9,10 +9,10 @@ spec:
       app: provider--shoesclick-login
   ports:
     - port: 7080
-      name: http-5000
+      name: http-7080
       protocol: TCP
       targetPort: 7080
     - port: 7443
-      name: http-7443
+      name: https-7443
       protocol: TCP
       targetPort: 7443
