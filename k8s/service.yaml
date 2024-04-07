@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-      app: provider--shoesclick-login
+      app: shoesclick-login
   ports:
     - port: 7080
       name: http-7080
