@@ -21,8 +21,6 @@ spec:
                   name: provider--shoesclick-login-configmap
             ports:
               - containerPort: 7080
-              - containerPort: 7080
-              - containerPort: 7080
               - containerPort: 9090
             livenessProbe:
               httpGet:
