@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: provider--shoesclick-login-configmap
+  namespace: shoes-eks
+data:
+  KC_HTTP_RELATIVE_PATH: "/auth"
+  KC_HOSTNAME: "localhost"
+  KC_HOSTNAME_PORT: 7080
+  KC_HOSTNAME_STRICT_BACKCHANNEL: true
+  KC_DB: "mysql"
+  KC_DB_URL: "jdbc:mysql://mysql.ns-infra.svc.cluster.local:3306/dbuser?createDatabaseIfNotExist=true&characterEncoding=UTF-8&rewriteBatchedStatements=true&enabledTLSProtocols=TLSv1,TLSv1.1,TLSv1.2"
+  KC_DB_USERNAME: "root"
+  KC_DB_PASSWORD: "password"
+  KEYCLOAK_ADMIN: "admin"
+  KEYCLOAK_ADMIN_PASSWORD: "admin"
+  KC_HEALTH_ENABLED: true
+  KC_LOG_LEVEL: info

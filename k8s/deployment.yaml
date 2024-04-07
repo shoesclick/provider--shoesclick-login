@@ -16,11 +16,9 @@ spec:
         containers:
           - name: provider--shoesclick-login-container
             image: $dck-accountid/$dck-repository:provider--shoesclick-login-$githash
-            env:
-              - name: SPRING_PROFILES_ACTIVE
-                value: "dev"
-              - name: CONFIG_SERVER
-                value: "http://svc-swapiconfigserver.shoes-eks.svc.cluster.local/config/"
+            envFrom:
+              - configMapRef:
+                  name: provider--shoesclick-login-configmap
             ports:
               - containerPort: 5000
               - containerPort: 9090
