@@ -16,3 +16,4 @@ spec:
       name: http-7443
       protocol: TCP
       targetPort: 7443
+  externalTrafficPolicy: Cluster
