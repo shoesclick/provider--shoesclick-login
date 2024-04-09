@@ -27,6 +27,6 @@ spec:
               - name: provider--shoesclick-login-persistent-storage
                 mountPath: "/opt/keycloak/standalone/data"
         volumes:
-          - name: provider--shoesclick-login--persistent-storage
+          - name: provider--shoesclick-login-persistent-storage
             persistentVolumeClaim:
               claimName: provider--shoesclick-login-pv-claim
