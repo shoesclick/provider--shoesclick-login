@@ -5,7 +5,7 @@ metadata:
   namespace: ns-login
 data:
   KC_HTTP_RELATIVE_PATH: "/auth"
-  KC_HOSTNAME: "svc-login.ns-login.svc.cluster.local"
+  KC_HOSTNAME: "login.shoesclick.local"
   KC_HOSTNAME_PORT: "7080"
   KC_HOSTNAME_STRICT_BACKCHANNEL: "true"
   KC_DB: "mysql"
