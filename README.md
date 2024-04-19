@@ -66,6 +66,9 @@ KC_HOSTNAME: "svc-login.ns-login.svc.cluster.local"
 ```
 
 Crie um Realm chamado shoesclick-site
+
+
+
 Crie um client id chamado site--shoesclick
 
 
