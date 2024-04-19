@@ -86,6 +86,11 @@ Agora Associe a Role ao cliente criado.
 ![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/AssociateClientRealm.jpg?raw=true)
 
 
+Importante: Configurar o cliente secret nos atributos do config server (Projeto config--shoesclick-server) 
+para os projetos service--notification e service--payment. 
+
+Também definir na variavel da collection e do jmeter
+
 ## Autores
 
 * **Clayton Morais de Oliveira**
