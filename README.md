@@ -74,7 +74,7 @@ Defina no seu arquivo de host o hostname definido
 ```
 127.0.0.1 svc-login.ns-login.svc.cluster.local
 ```
-No exemplo estou usando o cname do cluster por limitações de configuração de dns no Docker Desktop.
+No exemplo estou usando o cname do cluster por limitações de configuração de dns no Docker Desktop, pois a configuração padrão expõe apenas o localhost.
 
 
 Crie um Realm chamado "shoesclick-site"
