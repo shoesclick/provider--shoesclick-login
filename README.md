@@ -73,7 +73,7 @@ Crie um client id chamado "site--shoesclick"
 
 ![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/CreateClient.jpg?raw=true)
 
-Habilite as opções
+Habilite as opções "Client authentication" e "Authorization"
 
 ![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/ClientAuthentication.jpg?raw=true)
 
