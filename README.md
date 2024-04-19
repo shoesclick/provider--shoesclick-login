@@ -57,6 +57,16 @@ http://localhost:7080/auth/admin
 
 Este projeto é um provedor de autenticação keycloak. Também estará contido os temas.
 
+## Rodando no kubernetes (Stack)
+
+No arquivo k8s/configMap.yaml, definir o nome do host:
+
+```
+KC_HOSTNAME: "svc-login.ns-login.svc.cluster.local"
+```
+
+Crie um Realm chamado shoesclick-site
+Crie um client id chamado site--shoesclick
 
 
 ## Autores
