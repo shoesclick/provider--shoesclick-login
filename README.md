@@ -65,11 +65,25 @@ No arquivo k8s/configMap.yaml, definir o nome do host:
 KC_HOSTNAME: "svc-login.ns-login.svc.cluster.local"
 ```
 
-Crie um Realm chamado shoesclick-site
+Crie um Realm chamado "shoesclick-site"
 
+![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/CreateRealm.jpg?raw=true)
 
+Crie um client id chamado "site--shoesclick"
 
-Crie um client id chamado site--shoesclick
+![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/CreateClient.jpg?raw=true)
+
+Habilite as opções
+
+![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/ClientAuthentication.jpg?raw=true)
+
+Crie uma Role chamada "SITE_SHOES"
+
+![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/CreateRole.jpg?raw=true)
+
+Agora Associe a Role ao cliente criado.
+
+![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/AssociateClientRealm.jpg?raw=true)
 
 
 ## Autores
