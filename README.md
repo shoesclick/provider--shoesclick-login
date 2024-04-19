@@ -65,6 +65,18 @@ No arquivo k8s/configMap.yaml, definir o nome do host:
 KC_HOSTNAME: "svc-login.ns-login.svc.cluster.local"
 ```
 
+Isto é necessario porque o keycloak define o iss (Issuer) no token para validação da origem.
+
+Lembrando que o dns que voce definir, deve ser acessivel dentro do kubernetes.
+
+Defina no seu arquivo de host o hostname definido
+
+```
+127.0.0.1 svc-login.ns-login.svc.cluster.local
+```
+No exemplo estou usando o cname do cluster por limitações de configuração de dns no Docker Desktop.
+
+
 Crie um Realm chamado "shoesclick-site"
 
 ![alt text](https://github.com/shoesclick/provider--shoesclick-login/blob/master/img/CreateRealm.jpg?raw=true)
