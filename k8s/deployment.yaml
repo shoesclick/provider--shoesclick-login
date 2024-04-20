@@ -16,7 +16,7 @@ spec:
         containers:
           - name: provider--shoesclick-login-container
             image: $dck-accountid/$dck-repository:provider--shoesclick-login-$githash
-            args: ["start-dev","--http-port 7080", "--https-port 7443"]
+            args: ["start-dev","--http-port 7080", "--https-port 7443","--metrics-enabled true"]
             envFrom:
               - configMapRef:
                   name: provider--shoesclick-login-configmap
