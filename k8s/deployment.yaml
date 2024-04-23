@@ -26,7 +26,15 @@ spec:
             volumeMounts:
               - name: provider--shoesclick-login-persistent-storage
                 mountPath: "/opt/keycloak/standalone/data"
+            resources:
+              limits:
+                memory: "800Mi"
+                cpu: "600Mi"
+              requests:
+                memory: "600Mi"
+                cpu: "470Mi"
         volumes:
           - name: provider--shoesclick-login-persistent-storage
             persistentVolumeClaim:
               claimName: provider--shoesclick-login-pv-claim
+
